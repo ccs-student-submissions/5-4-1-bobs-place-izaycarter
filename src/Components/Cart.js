@@ -13,19 +13,22 @@ import Col from 'react-bootstrap/Col';
         render(){
             let cart = this.props.cart.map((item, index) => (
 
-                            <Row key={index}>
-                                <div className="item-name">
-                                    {item.name}
-                                </div>
-                                {item.description},{item.price}
+                            <Row className="d-flex justify-content-between" key={index}>
+
+                                    <span className="item-name">
+                                        {item.name}
+                                    </span>
+                                    <span className="cart-price">
+                                        ${item.price}
+                                    </span>
                                 <button type="button" onClick={() => this.props.removeFromCart(item)}>Remove</button>
                             </Row>
                         ));
             return(
-                <Col md={5}>
-                    <Row className="cart-title">Check-Out CART</Row>
+                <Col className="">
+                    <Row className="cart-title d-flex justify-content-center"><h2>Check-Out CART</h2></Row>
                     {cart}
-                    <Row><p>Your Total:</p>${this.props.subtotal}</Row>
+                    <Row className="d-flex justify-content-center"><p>Your Total:</p>${this.props.subtotal}</Row>
 
                 </Col>
             )

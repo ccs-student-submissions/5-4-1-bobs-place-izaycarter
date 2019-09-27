@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import './../App.css';
+import './../Css/App.css';
 import Menu from  "../Components/Menu";
 import Cart from "./../Components/Cart";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,7 +21,8 @@ class App extends Component{
     }
 
     componentDidMount(){
-        let menu= [{name:"dish one", price:10,description:"this is worth it"},{name:"dish Two", price:7,description:"get what you pay for"},{name:"dish three", price:12 ,description:"well i ran out of ideas"}];
+        let menu= [{name:"Napoleon", price:20,description:"House-aged 1855 Black Angus filet mignon grilled to perfection layered with the perfect crab cake, rice pilaf, sofrito collard greens and a caramelized onion béarnaise sauce. Highly recommended."},{name:"Barbie Basted Chicken Breast", price:10 ,description:"Roasted chicken breast smothered with a brown sugar & chili barbecue sauce, caramelized onions and finished with smoked bacon collard greens and rice pilaf."},{name:"Carpet Bagger", price:56 ,description:"House-aged 1855 Black Angus filet mignon grilled to perfection combined with hand breaded oysters fried golden, smoked bacon collard greens and garlic mashed potatoes. All finished with a spicy tarragon rémoulade."},{name:"Just too good to be named… ", price:25 , description:"The perfect layered combination of Chipotle blackened sashimi grade tuna, warm goat cheese, roasted tomato chowchow, Sofrito style collard greens, rice pilaf and finished with a balsamic glaze."},{name:"Pappardelle & Meatballs", price:29 , description:"Fresh pappardelle noodles, lamb meatballs, lamb ragout, rosemary infused mascarpone, lemon pin-nut gremolata"}];
+
         this.setState({menu: menu});
     }
 
@@ -47,16 +48,14 @@ class App extends Component{
 
     render() {
       return (
-            <Container>
-            <Row><h1>test</h1></Row>
+            <Container className="page-container">
+            <Row className="mb-2"><h1>Zay's </h1></Row>
             <Row>
-            <Col md={7}>
+            <Col md={7} className="pl-0">
                 <Menu menu = {this.state.menu} addToCart={this.addToCart}/>
             </Col>
-            <Col md={5}>
+            <Col md={5} className="d-flex justify-content-center">
                 <Cart cart = {this.state.cart} subtotal = {this.state.subtotal} removeFromCart = {this.removeFromCart}/>
-
-
             </Col>
             </Row>
             <link

@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Row from 'react-bootstrap/Row';
+import "./../Css/Menu.css"
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 
@@ -19,14 +19,14 @@ import ListGroup from 'react-bootstrap/ListGroup';
             let menuitem = this.props.menu.map((item, index) => {
                 return <ListGroup>
 
-                            <ListGroup.Item key={index}>
+                            <ListGroup.Item key={index} className="border-0 pl-0">
                                 <Col sm={12} className="item-name">
                                     {item.name}
                                 </Col>
                                 <Col sm={12} className="item-description">
                                     {item.description}
                                 </Col>
-                                <Col sm={12}>
+                                <Col className="border-bottom d-flex justify-content-between align-items-end" sm={12} >
                                 ${item.price}
                                 <button type="button" onClick={() => this.props.addToCart(item)}>ADD TO CART</button>
                                 </Col>
@@ -35,14 +35,14 @@ import ListGroup from 'react-bootstrap/ListGroup';
                         </ListGroup>
             });
             return(
-                <Col md={7}>
-                    <h2>
-                        plase work Menu
+                <main>
+                    <h2 className="d-flex justify-content-center">
+                        Menu
                     </h2>
-                    <ul>
+                    <ul className="menu-list pl-0">
                         {menuitem}
                     </ul>
-                </Col>
+                </main>
             );
         }
     }

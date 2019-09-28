@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
+import "../Css/Cart.css"
     class Cart extends Component{
         constructor(props){
             super(props);
@@ -13,7 +13,7 @@ import Col from 'react-bootstrap/Col';
         render(){
             let cart = this.props.cart.map((item, index) => (
 
-                            <Row className="d-flex justify-content-between" key={index}>
+                            <Row className="d-flex justify-content-between cart-items" key={index}>
 
                                     <span className="item-name">
                                         {item.name}
@@ -26,9 +26,9 @@ import Col from 'react-bootstrap/Col';
                         ));
             return(
                 <Col className="">
-                    <Row className="cart-title d-flex justify-content-center"><h2>Check-Out CART</h2></Row>
+                    <Row className="cart-title  cart-font d-flex justify-content-center"><h2>Check-Out CART</h2></Row>
                     {cart}
-                    <Row className="d-flex justify-content-center"><p>Your Total:</p>${this.props.subtotal}</Row>
+                    <Row className="d-flex justify-content-center cart-font"><p>Your Total:</p>${this.props.subtotal}</Row>
 
                 </Col>
             )

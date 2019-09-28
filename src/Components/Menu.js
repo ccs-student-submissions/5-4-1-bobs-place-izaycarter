@@ -36,7 +36,7 @@ import {FaCartPlus} from "react-icons/fa"
             });
             return(
                 <main>
-                    <h2 className="d-flex justify-content-center">
+                    <h2 className="title-menu d-flex justify-content-center">
                         Menu
                     </h2>
                     <ul className="menu-list pl-0">

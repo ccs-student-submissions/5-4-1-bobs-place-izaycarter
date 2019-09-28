@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import "./../Css/Menu.css"
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
+import {FaCartPlus} from "react-icons/fa"
 
 
     class Menu extends Component {
@@ -17,9 +18,8 @@ import ListGroup from 'react-bootstrap/ListGroup';
 
         render(){
             let menuitem = this.props.menu.map((item, index) => {
-                return <ListGroup>
-
-                            <ListGroup.Item key={index} className="border-0 pl-0">
+                return <ListGroup key={index}>
+                            <ListGroup.Item className="border-0 pl-0">
                                 <Col sm={12} className="item-name">
                                     {item.name}
                                 </Col>
@@ -28,7 +28,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
                                 </Col>
                                 <Col className="border-bottom d-flex justify-content-between align-items-end" sm={12} >
                                 ${item.price}
-                                <button type="button" onClick={() => this.props.addToCart(item)}>ADD TO CART</button>
+                                <button type="button" onClick={() => this.props.addToCart(item)}><FaCartPlus /></button>
                                 </Col>
 
                             </ListGroup.Item>

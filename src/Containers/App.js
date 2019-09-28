@@ -30,7 +30,7 @@ class App extends Component{
         console.log(typeof(item.price));
         let items = [...this.state.cart];
         items.push(item);
-        this.setState((prevState , props)=> ({
+        this.setState((prevState ,props)=> ({
             cart: items, subtotal: prevState.subtotal + item.price
         }));
         console.log(items);

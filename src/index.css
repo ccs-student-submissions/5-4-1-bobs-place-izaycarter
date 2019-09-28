@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+      background-image: url("https://courierrestaurant.com/wp-content/uploads/2018/07/ghd-courier-1024x683.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
 }
 
 code {

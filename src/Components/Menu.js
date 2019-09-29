@@ -28,7 +28,7 @@ import {FaCartPlus} from "react-icons/fa"
                                 </Col>
                                 <Col className="border-bottom d-flex justify-content-between align-items-end" sm={12} >
                                 ${item.price}
-                                <button type="button" onClick={() => this.props.addToCart(item)}><FaCartPlus /></button>
+                                <button className="cart-button" type="button" onClick={() => this.props.addToCart(item)}><FaCartPlus /></button>
                                 </Col>
 
                             </ListGroup.Item>

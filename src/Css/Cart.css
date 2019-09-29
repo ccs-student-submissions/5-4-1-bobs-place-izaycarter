@@ -4,6 +4,8 @@
 .cart-font{
     color: #F5F5F5;
     font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .cart-items{

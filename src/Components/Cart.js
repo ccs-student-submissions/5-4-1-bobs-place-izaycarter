@@ -26,7 +26,7 @@ import "../Css/Cart.css"
                         ));
             return(
                 <Col className="">
-                    <Row className="cart-title  cart-font d-flex justify-content-center"><h2>Check-Out CART</h2></Row>
+                    <Row className="cart-title  cart-font d-flex justify-content-center"><h2>Check-Out</h2></Row>
                     {cart}
                     <Row className="d-flex justify-content-center cart-font"><p>Your Total:</p>${this.props.subtotal}</Row>
 

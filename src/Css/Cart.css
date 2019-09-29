@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+
 .cart-font{
-    color: #AFAFAF;
+    color: #F5F5F5;
+    font-family: 'Playfair Display', serif;
 }
 
 .cart-items{
     background-color: rgba(0, 0, 0, 0.4) !important;
-    color: #AFAFAF;
+    color: #F5F5F5;
+    font-family: 'Playfair Display', serif;
 }

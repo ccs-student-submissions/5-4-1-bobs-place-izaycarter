@@ -1,5 +1,8 @@
 .main-title{
-    color: #AFAFAF;
-    font-size: 60px;
-    
+    color: #F5F5F5;
+    font-size: 80px;
+    font-family: 'Josefin Sans';
+
 }
+
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");

@@ -65,9 +65,9 @@ class App extends Component{
             <Row>
             <Col md={7} className="pl-0">
                 <Row className="justify-content-around">
-                    <button type="button" onClick={() => this.appetizers()}>appetizers</button>
-                    <button type="button" onClick={() => this.componentDidMount()}>Entree</button>
-                    <button type="button" onClick={() => this.dessert() }>Dessert</button>
+                    <button className="food-type" type="button" onClick={() => this.appetizers()}>appetizers</button>
+                    <button className="food-type" type="button" onClick={() => this.componentDidMount()}>Entree</button>
+                    <button className="food-type" type="button" onClick={() => this.dessert() }>Dessert</button>
                 </Row>
                 <Menu menu = {this.state.menu} addToCart={this.addToCart}/>
             </Col>

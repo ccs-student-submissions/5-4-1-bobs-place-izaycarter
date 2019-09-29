@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+
 .item-name{
     font-size: 20px;
 }
 
 .list-group-item{
     background-color: rgba(0, 0, 0, 0.4) !important;
-    color: #AFAFAF;
+    color: #F5F5F5;
+    font-family: 'Playfair Display', serif;
 }
 
 .title-menu{
-    color: #AFAFAF;
+    color: #F5F5F5;
+    font-family: 'Playfair Display', serif;
 }

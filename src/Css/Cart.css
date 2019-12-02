@@ -5,11 +5,11 @@
     color: #F5F5F5;
     font-family: 'Playfair Display', serif;
     font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .cart-items{
-    background-color: rgba(0, 0, 0, 0.4) !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
     color: #F5F5F5;
     font-family: 'Playfair Display', serif;
 }

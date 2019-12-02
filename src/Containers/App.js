@@ -44,7 +44,7 @@ class App extends Component{
   }
 
   appetizers(){
-    let appetizers = [{name:"Napoleon", price:20,description:"House-aged 1855 Black Angus filet mignon grilled to perfection layered with the perfect crab cake, rice pilaf, sofrito collard greens and a caramelized onion béarnaise sauce. Highly recommended."},{name:"Barbie Basted Chicken Breast", price:10 ,description:"Roasted chicken breast smothered with a brown sugar & chili barbecue sauce, caramelized onions and finished with smoked bacon collard greens and rice pilaf."}]
+    let appetizers = [{name:"Smoke N' Jackets", price:8,description:"Potato skins stuffed with your choice of pulled pork, beef brisket, or smoked chicken, topped with BBQ sauce and cheddar cheese, then baked. Served with sour cream on the side."},{name:"Fried Green Tomatoes", price:6, description: "Lightly dredged, fried up crisp and served with homemade horseradish-dijon sauce. Enough to make you stop and whistle"},{name:"Grilled Cue Shimp", price:9, description:"resh shrimp marinated in our own BBQ sauce, skewered and grilled over hickory and mesquite 'til they're sizzling"},{name:"Truffle Parmesan Fries" ,price:7 , description:"Parmesan,with white truffle oil"}]
 
     this.setState({menu: appetizers});
   }

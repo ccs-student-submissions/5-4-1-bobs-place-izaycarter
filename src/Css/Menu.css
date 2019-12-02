@@ -6,7 +6,7 @@
 }
 
 .list-group-item{
-    background-color: rgba(0, 0, 0, 0.4) !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
     color: #F5F5F5;
     font-family: 'Playfair Display', serif;
 }
@@ -17,7 +17,7 @@
 }
 
 .cart-button{
-    background-color: rgba(0, 0, 0, 0.4) !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
     color: #F5F5F5;
 
 }

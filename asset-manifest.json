@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/5-4-1-bobs-place-izaycarter/static/css/main.e8932447.chunk.css",
-    "main.js": "/5-4-1-bobs-place-izaycarter/static/js/main.640e144a.chunk.js",
-    "main.js.map": "/5-4-1-bobs-place-izaycarter/static/js/main.640e144a.chunk.js.map",
-    "runtime-main.js": "/5-4-1-bobs-place-izaycarter/static/js/runtime-main.09753672.js",
-    "runtime-main.js.map": "/5-4-1-bobs-place-izaycarter/static/js/runtime-main.09753672.js.map",
-    "static/css/2.0624914a.chunk.css": "/5-4-1-bobs-place-izaycarter/static/css/2.0624914a.chunk.css",
-    "static/js/2.9b89cfa5.chunk.js": "/5-4-1-bobs-place-izaycarter/static/js/2.9b89cfa5.chunk.js",
-    "static/js/2.9b89cfa5.chunk.js.map": "/5-4-1-bobs-place-izaycarter/static/js/2.9b89cfa5.chunk.js.map",
-    "index.html": "/5-4-1-bobs-place-izaycarter/index.html",
-    "precache-manifest.21ed85ffb45c704d94d2ea3dfa52e919.js": "/5-4-1-bobs-place-izaycarter/precache-manifest.21ed85ffb45c704d94d2ea3dfa52e919.js",
-    "service-worker.js": "/5-4-1-bobs-place-izaycarter/service-worker.js",
-    "static/css/2.0624914a.chunk.css.map": "/5-4-1-bobs-place-izaycarter/static/css/2.0624914a.chunk.css.map",
-    "static/css/main.e8932447.chunk.css.map": "/5-4-1-bobs-place-izaycarter/static/css/main.e8932447.chunk.css.map"
+    "main.css": "/Zays-Restaurant/static/css/main.e8932447.chunk.css",
+    "main.js": "/Zays-Restaurant/static/js/main.b5249379.chunk.js",
+    "main.js.map": "/Zays-Restaurant/static/js/main.b5249379.chunk.js.map",
+    "runtime-main.js": "/Zays-Restaurant/static/js/runtime-main.b11e18bb.js",
+    "runtime-main.js.map": "/Zays-Restaurant/static/js/runtime-main.b11e18bb.js.map",
+    "static/css/2.0624914a.chunk.css": "/Zays-Restaurant/static/css/2.0624914a.chunk.css",
+    "static/js/2.9b89cfa5.chunk.js": "/Zays-Restaurant/static/js/2.9b89cfa5.chunk.js",
+    "static/js/2.9b89cfa5.chunk.js.map": "/Zays-Restaurant/static/js/2.9b89cfa5.chunk.js.map",
+    "index.html": "/Zays-Restaurant/index.html",
+    "precache-manifest.f7490dc8224a0781798caae7a8934389.js": "/Zays-Restaurant/precache-manifest.f7490dc8224a0781798caae7a8934389.js",
+    "service-worker.js": "/Zays-Restaurant/service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "/Zays-Restaurant/static/css/2.0624914a.chunk.css.map",
+    "static/css/main.e8932447.chunk.css.map": "/Zays-Restaurant/static/css/main.e8932447.chunk.css.map"
   }
 }

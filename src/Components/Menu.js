@@ -17,6 +17,10 @@ import {FaCartPlus} from "react-icons/fa"
 
 
         render(){
+            let entreeMenu = this.props.entreeMenu;
+            let appetizerMenu = this.props.appetizerMenu;
+            let dessertMenu = this.props.dessertMenu;
+
             let menuitem = this.props.menu.map((item, index) => {
                 return <ListGroup key={index}>
                             <ListGroup.Item className="border-0 pl-0">
@@ -37,7 +41,7 @@ import {FaCartPlus} from "react-icons/fa"
             return(
                 <main>
                     <h2 className="title-menu d-flex justify-content-center">
-                        Menu
+                        {appetizerMenu ? "Appetizer Menu" : dessertMenu ? "Dessert Menu" : entreeMenu ? "Entree Menu": "Menu"}
                     </h2>
                     <ul className="menu-list pl-0">
                         {menuitem}

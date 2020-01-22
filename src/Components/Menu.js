@@ -39,7 +39,7 @@ import {FaCartPlus} from "react-icons/fa"
                         </ListGroup>
             });
             return(
-                <main>
+                <main className="d-flex menu-wrapper">
                     <h2 className="title-menu d-flex justify-content-center">
                         {appetizerMenu ? "Appetizer Menu" : dessertMenu ? "Dessert Menu" : entreeMenu ? "Entree Menu": "Menu"}
                     </h2>

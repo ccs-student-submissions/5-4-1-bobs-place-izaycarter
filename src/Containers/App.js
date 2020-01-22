@@ -53,7 +53,7 @@ class App extends Component{
   }
 
   dessert(){
-      let dessert = [{name:"New-York taste", price:9,description:"House-aged 1855 Black Angus filet mignon grilled to perfection layered with the perfect crab cake, rice pilaf, sofrito collard greens and a caramelized onion béarnaise sauce. Highly recommended."},{name:"Barbie Basted Chicken Breast", price:10 ,description:"Roasted chicken breast smothered with a brown sugar & chili barbecue sauce, caramelized onions and finished with smoked bacon collard greens and rice pilaf."}]
+      let dessert = [{name:"New-York taste", price:9,description:"World class cheese cake just the way they make it in New York."},{name:"Chocolate-Mint Bars", price:10 ,description:"Perfectly cooled, well balanced between mint and chocolate for al to enjoy."},{name:"White Chocolate Banana Pudding", price:8 ,description:"Banana pudding with a twist. Perfect to share"},{name:"Cinnamon Apple Cobler", price:7 ,description:"Sweet warm apples with golden crust on top."}]
 
       this.setState({menu: dessert, entreeMenu: false, appetizerMenu: false, dessertMenu: true});
   }
@@ -62,11 +62,15 @@ class App extends Component{
 
 
     render() {
+
+        let showCart = this.state.cart;
+        console.log(showCart);
+
       return (
             <Container className="page-container">
             <Row className="mb-4 justify-content-center"><h1 className="main-title">ZAY's </h1></Row>
             <Row>
-            <Col md={7} className="pl-0">
+            <Col md={7} className="justify-content-center mb-1">
                 <Row className="justify-content-around">
                     <button className="food-type" type="button" onClick={() => this.appetizers()}>appetizers</button>
                     <button className="food-type" type="button" onClick={() => this.componentDidMount()}>Entree</button>
@@ -74,9 +78,12 @@ class App extends Component{
                 </Row>
                 <Menu menu = {this.state.menu} addToCart={this.addToCart} entreeMenu={this.state.entreeMenu} appetizerMenu={this.state.appetizerMenu} dessertMenu={this.state.dessertMenu}/>
             </Col>
-            <Col md={5} className="d-flex justify-content-center">
-                <Cart cart = {this.state.cart} subtotal = {this.state.subtotal} removeFromCart = {this.removeFromCart}/>
-            </Col>
+            {showCart.length > 0 ? 
+                <Col md={5} className="d-flex justify-content-center mb-1">
+                    <Cart cart = {this.state.cart} subtotal = {this.state.subtotal} removeFromCart = {this.removeFromCart}/>
+                </Col> : null
+            }
+            
             </Row>
             <link
               rel="stylesheet"

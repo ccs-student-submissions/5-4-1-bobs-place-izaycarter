@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 
 
+.menu-wrapper{
+    flex-direction: column;
+}
+
 .item-name{
     font-size: 20px;
 }

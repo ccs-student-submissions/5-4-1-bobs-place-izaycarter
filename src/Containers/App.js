@@ -23,6 +23,7 @@ class App extends Component{
         this.removeFromCart = this.removeFromCart.bind(this);
         this.appetizers = this.appetizers.bind(this);
         this.dessert = this.dessert.bind(this);
+        this.checkOut = this.checkOut.bind(this);
     }
 
     componentDidMount(){
@@ -58,33 +59,47 @@ class App extends Component{
       this.setState({menu: dessert, entreeMenu: false, appetizerMenu: false, dessertMenu: true});
   }
 
+  checkOut(e){
+    e.preventDefault();
+    this.setState({cart:[], subtotal: 0});
+    alert("Your order has been placed !");
+  }
 
 
 
     render() {
 
         let showCart = this.state.cart;
-        console.log(showCart);
 
       return (
             <Container className="page-container">
             <Row className="mb-4 justify-content-center"><h1 className="main-title">ZAY's </h1></Row>
+            {showCart.length > 0 ? 
             <Row>
-            <Col md={7} className="justify-content-center mb-1">
+                <Col md={7} className="justify-content-center mb-1">
                 <Row className="justify-content-around">
                     <button className="food-type" type="button" onClick={() => this.appetizers()}>appetizers</button>
                     <button className="food-type" type="button" onClick={() => this.componentDidMount()}>Entree</button>
                     <button className="food-type" type="button" onClick={() => this.dessert() }>Dessert</button>
                 </Row>
-                <Menu menu = {this.state.menu} addToCart={this.addToCart} entreeMenu={this.state.entreeMenu} appetizerMenu={this.state.appetizerMenu} dessertMenu={this.state.dessertMenu}/>
-            </Col>
-            {showCart.length > 0 ? 
-                <Col md={5} className="d-flex justify-content-center mb-1">
-                    <Cart cart = {this.state.cart} subtotal = {this.state.subtotal} removeFromCart = {this.removeFromCart}/>
-                </Col> : null
-            }
+                    <Menu menu = {this.state.menu} addToCart={this.addToCart} entreeMenu={this.state.entreeMenu} appetizerMenu={this.state.appetizerMenu} dessertMenu={this.state.dessertMenu}/>
+                </Col>
+                <Col md={5} className="d-flex justify-content-center mb-4">
+                    <Cart cart = {this.state.cart} subtotal = {this.state.subtotal} removeFromCart = {this.removeFromCart} checkOut = {this.checkOut}/>
+                </Col>
+            </Row> : 
             
-            </Row>
+                <Row>
+                    <Col md={12} className="justify-content-center mb-1">
+                        <Row className="justify-content-around">
+                            <button className="food-type" type="button" onClick={() => this.appetizers()}>appetizers</button>
+                            <button className="food-type" type="button" onClick={() => this.componentDidMount()}>Entree</button>
+                            <button className="food-type" type="button" onClick={() => this.dessert() }>Dessert</button>
+                        </Row>
+                        <Menu menu = {this.state.menu} addToCart={this.addToCart} entreeMenu={this.state.entreeMenu} appetizerMenu={this.state.appetizerMenu} dessertMenu={this.state.dessertMenu}/>
+                    </Col>
+                </Row>
+            }
             <link
               rel="stylesheet"
               href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"

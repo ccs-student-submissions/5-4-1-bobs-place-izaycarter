@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/5-4-1-bobs-place-izaycarter/precache-manifest.3739bc1ad767925d2593984e3fee5e0e.js"
+  "/5-4-1-bobs-place-izaycarter/precache-manifest.eb1322e0efd2d1eb3e11294324b3f1a8.js"
 );
 
 self.addEventListener('message', (event) => {
